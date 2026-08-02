@@ -143,9 +143,9 @@ function NewsFeedPage() {
     <div className="site-shell">
       <header className="site-header">
         <nav className="nav-shell" aria-label="主导航">
-          <a className="brand" href="/home" aria-label="AI NEWS 首页">
+          <a className="brand" href="/home" aria-label="AI NEWS｜你的情报收集助理 首页">
             <Image src="/images/ai-news-mark.png" width={30} height={30} alt="" priority />
-            <span>AI NEWS</span>
+            <span>AI NEWS｜你的情报收集助理</span>
           </a>
 
           <div className="category-tabs" aria-label="资讯分类">

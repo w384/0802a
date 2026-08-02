@@ -30,6 +30,12 @@ test("the /home route exposes the required news categories and UI states", async
   }
 });
 
+test("the /home brand includes the intelligence assistant descriptor", async () => {
+  const source = await readFile(projectFile("app/home/page.tsx"), "utf8");
+
+  assert.match(source, /AI NEWS｜你的情报收集助理/);
+});
+
 test("simulated empty and error states can recover to the news feed", async () => {
   const source = await readFile(projectFile("app/home/page.tsx"), "utf8");
 
